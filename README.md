@@ -20,16 +20,16 @@ Tahapan preprocessing dilakukan untuk membersihkan dan mempersiapkan data teks a
 6. Penghapusan stopword
 7. Stemming menggunakan Sastrawi
    
-**Pemodelan Topik**
+-_ Pemodelan Topik_
 
 Pemodelan topik dilakukan menggunakan metode Latent Dirichlet Allocation (LDA). Model ini merupakan pendekatan probabilistik dalam unsupervised learning yang mengasumsikan bahwa setiap dokumen merupakan kombinasi dari beberapa topik, dan setiap topik terdiri dari distribusi kata tertentu.
 Representasi data menggunakan Bag of Words. Estimasi parameter dilakukan menggunakan pendekatan Gibbs Sampling atau Variational Inference. Hasil model berupa distribusi topik pada setiap dokumen dan distribusi kata pada setiap topik.
 
-**Evaluasi Model**
+- _Evaluasi Model_
 
 Evaluasi dilakukan menggunakan coherence score untuk mengukur tingkat keterkaitan antar kata dalam suatu topik. Model dengan nilai coherence tertinggi dipilih sebagai model terbaik karena menghasilkan topik yang lebih koheren dan mudah diinterpretasikan.
 
-**Hasil**
+- _Hasil_
 
 Model terbaik diperoleh dengan jumlah empat topik. Keempat topik tersebut merepresentasikan:
 - Aksi demonstrasi dan kerusuhan
@@ -41,7 +41,9 @@ Selain itu, dilakukan visualisasi menggunakan intertopic distance map dan word c
 **Struktur Repository**
 
 Repository ini terdiri dari beberapa direktori utama sebagai berikut:
+
 notebook: berisi kode analisis topic modeling
+
 README.md: dokumentasi penelitian
 
 **Perangkat yang Digunakan**
